@@ -18,4 +18,6 @@ tweepy
 gunicorn
 pythainlp
 numpy
-nltk pythainlp
+wordnet
+pros_cons
+reuters

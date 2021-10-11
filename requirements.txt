@@ -16,6 +16,5 @@ Werkzeug==1.0.1
 pandas
 tweepy
 gunicorn
-nltk pythainlp
 pythainlp
 numpy

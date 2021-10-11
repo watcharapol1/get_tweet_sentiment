@@ -18,3 +18,4 @@ tweepy
 gunicorn
 pythainlp
 numpy
+nltk pythainlp

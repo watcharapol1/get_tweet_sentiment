@@ -101,7 +101,7 @@ def sentiment_analyst():
 def home():
     return 'Hello World'
 
-@app.route('/api/get-tweet', methods=['GET'])
+@app.route('/api/twitter-sentiments', methods=['GET'])
 def get_api():
     return sentiment_analyst()
 

@@ -92,7 +92,7 @@ def sentiment_analyst():
     for i in search_tweets():
         test.append(sentiment(i))
     df = pd.DataFrame(test, columns = ['text','sentiment'])
-    result = df.to_json(orient="index")
+    result = df.to_json(orient="records")
     parsed = json.loads(result)
     return jsonify(parsed)
 

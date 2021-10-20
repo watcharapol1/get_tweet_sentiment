@@ -81,9 +81,8 @@ def search_tweets():
 def sentiment(text_tweet):
     test_sentence = text_tweet
     featurized_test_sentence =  {i:(i in word_tokenize(test_sentence.lower())) for i in vocabulary}
-    tweet = test_sentence 
     sentiment = classifier.classify(featurized_test_sentence)
-    my_array = np.array([tweet, sentiment])
+    my_array = np.array([test_sentence, sentiment])
 
     return my_array
 #############################################################################################

@@ -2,7 +2,7 @@ from nltk import NaiveBayesClassifier as nbc
 from pythainlp.tokenize import word_tokenize
 import codecs
 from itertools import chain
-from flask import Flask,request
+from flask import Flask,request, jsonify
 import pandas as pd
 import tweepy as tw
 import json
@@ -95,7 +95,7 @@ def sentiment_analyst():
     df = pd.DataFrame(test, columns = ['text','sentiment'])
     result = df.to_json(orient="index")
     parsed = json.loads(result)
-    return parsed
+    return jsonify(parsed)
 
 @app.route('/', methods=['GET'])
 def home():
